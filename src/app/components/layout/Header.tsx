@@ -1,6 +1,6 @@
 const Header = () => {
   return (
-    <header className="navbar lg:px-40 fixed top-0 left-0 z-50">
+    <header className="navbar lg:px-40 fixed top-0 left-0 z-50 bg-primary text-primary-content">
       <div className="flex-none">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -30,7 +30,7 @@ const Header = () => {
         </div>
       </div>
       <div className="flex-1">
-        <a className="btn btn-ghost text-xl text-color">Yulfolio</a>
+        <a className="btn btn-ghost text-xl ">Yulfolio</a>
       </div>
       <div className="hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
