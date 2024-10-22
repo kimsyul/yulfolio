@@ -33,7 +33,7 @@ export default function RootLayout({
     <html lang="ko" data-theme="autumn">
       <body className={`${inter.className} ${notoSansKR.className} antialiased`}>
         <Header />
-        <main className="container mx-auto px-4 md:px-8 py-4 min-h-screen relative top-16">{children}</main>
+        <main className="min-h-screen relative top-16">{children}</main>
         <Footer />
       </body>
     </html>

@@ -1,31 +1,93 @@
-import Layout from './Layout';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUser, faCalendarDays, faEnvelope, faGraduationCap } from '@fortawesome/free-solid-svg-icons';
 import { ReactNode } from 'react';
+import Wrapper from '../layout/Wrapper';
 
-const Card = ({ children, title, content }: { children: ReactNode; title: string; content: string }) => {
-  return (
-    <div className="flex items-center gap-4 py-4 ">
-      {children}
-      <div>
-        <span className="font-bold flex gap-1 items-center">{title}</span>
-        <p>{content}</p>
-      </div>
-    </div>
-  );
-};
+const basic = ['HTML 5', 'CSS 3', 'JavaScript', 'TypeScript'];
+const library = ['React', 'Next.js', 'Axios', 'TanStack Query'];
+const styling = ['Tailwind CSS', 'Styled-Component', 'SCSS'];
+const tool = ['Git', 'Github', 'Figma', 'Notion', 'Slack'];
 
 const About = () => {
+  const Skill = ({ title, children }: { title: string; children: ReactNode }) => {
+    return (
+      <div className="flex flex-col gap-2 mb-4">
+        <span className="font-black">{title}</span>
+        <div className="flex gap-1">{children}</div>
+      </div>
+    );
+  };
+
   return (
-    <Layout title="About">
-      <span className="text-secondary font-bold text-center text-xl">Contact.</span>
-      <Card content="1997.06.16" title="생년월일">
-        <FontAwesomeIcon icon={faCalendarDays} />
-      </Card>
-      <Card title="이메일" content="yul_the@naver.com">
-        <FontAwesomeIcon icon={faEnvelope} />
-      </Card>
-    </Layout>
+    <section className="bg-primary">
+      <Wrapper>
+        <h1 className="text-4xl font-bold pb-2">김서율</h1>
+        <h2 className="text-xl font-bold pb-4">Web Frontend Developer</h2>
+        <div className="pt-4 pb-10">
+          <div className="bg-base-200 rounded-2xl flex flex-col justify-center items-center py-10 px-20">
+            <div className="flex flex-col lg:flex-row gap-10 pb-10">
+              <img
+                className="mask mask-circle"
+                src="https://img.daisyui.com/images/stock/photo-1567653418876-5bb0e566e1c2.webp"
+              />
+              <div className="flex flex-col gap-4">
+                <a className="btn btn-primary btn-wide text-white font-bold" href="mailto:yul_the@naver.com">
+                  yul_the@naver.com
+                </a>
+
+                <a
+                  className="btn btn-primary btn-wide text-white font-bold text-center"
+                  href="https://github.com/kimsyul?tab=repositories">
+                  GitHub
+                </a>
+                <a
+                  className="btn btn-primary btn-widel text-white font-bold text-center"
+                  href="https://velog.io/@kimsyul/posts">
+                  Blog
+                </a>
+              </div>
+            </div>
+            <div className="divider divider-primary pb-6" />
+            <h1 className="bg-primary text-white font-extrabold text-2xl px-3 py-1 mb-4">Skills</h1>
+            <div className="outline-dashed outline-primary rounded-xl p-10 mx-10 mb-12">
+              <Skill title="Basic">
+                {basic.map((skill) => (
+                  <div key={skill} className="badge badge-neutral text-white font-bold">
+                    {skill}
+                  </div>
+                ))}
+              </Skill>
+              <Skill title="Library / Framework">
+                {library.map((skill) => (
+                  <div key={skill} className="badge badge-primary text-white font-bold">
+                    {skill}
+                  </div>
+                ))}
+              </Skill>
+              <Skill title="Styling">
+                {styling.map((skill) => (
+                  <div key={skill} className="badge badge-secondary text-white font-bold">
+                    {skill}
+                  </div>
+                ))}
+              </Skill>
+              <Skill title="Tool">
+                {tool.map((skill) => (
+                  <div key={skill} className="badge badge-accent text-white font-bold">
+                    {skill}
+                  </div>
+                ))}
+              </Skill>
+            </div>
+
+            <h1 className="bg-primary text-white font-extrabold text-2xl px-3 py-1 mb-4">Introduction</h1>
+            <div className="outline-dashed outline-primary rounded-xl p-10 mx-10 w-full">
+              사용자가 편안함을 느낄 수 있는, 반응성 높은 인터페이스를 지향합니다. 디테일과 깨끗한 코드를 중요시하며,
+              이를 위해 지속적으로 학습하고 있습니다. 또한 사용자 경험을 개선하기 위해 노력하고 있습니다. 제
+              포트폴리오를 봐주셔서 감사합니다!
+            </div>
+          </div>
+        </div>
+      </Wrapper>
+    </section>
   );
 };
 
