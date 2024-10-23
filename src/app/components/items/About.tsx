@@ -3,8 +3,9 @@ import Wrapper from '../layout/Wrapper';
 
 const basic = ['HTML 5', 'CSS 3', 'JavaScript', 'TypeScript'];
 const library = ['React', 'Next.js', 'Axios', 'TanStack Query'];
-const styling = ['Tailwind CSS', 'Styled-Component', 'SCSS'];
-const tool = ['Git', 'Github', 'Figma', 'Notion', 'Slack'];
+const styling = ['Tailwind CSS', 'DaisyUI', 'Styled-Component', 'SCSS'];
+const tool = ['Git', 'Github', 'Figma', 'Notion', 'Slack', 'Postman'];
+const cloud = ['Firebase', 'Vercel'];
 
 const About = () => {
   const Skill = ({ title, children }: { title: string; children: ReactNode }) => {
@@ -21,7 +22,7 @@ const About = () => {
       <Wrapper>
         <h1 className="text-4xl font-bold pb-2">김서율</h1>
         <h2 className="text-xl font-bold pb-4">Web Frontend Developer</h2>
-        <div className="pt-4 pb-10">
+        <div className="pt-4">
           <div className="bg-base-200 rounded-2xl flex flex-col justify-center items-center py-10 px-20">
             <div className="flex flex-col lg:flex-row gap-10 pb-10">
               <img
@@ -39,7 +40,7 @@ const About = () => {
                   GitHub
                 </a>
                 <a
-                  className="btn btn-primary btn-widel text-white font-bold text-center"
+                  className="btn btn-primary btn-wide text-white font-bold text-center"
                   href="https://velog.io/@kimsyul/posts">
                   Blog
                 </a>
@@ -72,6 +73,13 @@ const About = () => {
               <Skill title="Tool">
                 {tool.map((skill) => (
                   <div key={skill} className="badge badge-accent text-white font-bold">
+                    {skill}
+                  </div>
+                ))}
+              </Skill>
+              <Skill title="Cloud">
+                {cloud.map((skill) => (
+                  <div key={skill} className="badge bg-slate-400 text-white font-bold">
                     {skill}
                   </div>
                 ))}
