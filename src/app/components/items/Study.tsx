@@ -38,7 +38,7 @@ const StudyCard = (study: Study) => {
         </div>
         <div className="flex flex-col items-center gap-4">
           <span className="font-bold text-xl text-center border-b-4 border-secondary">🙋🏻‍♀️ 이런 걸 배웠어요!</span>
-          <p className="w-full bg-primary bg-opacity-50 rounded-md p-4 ">{study.insight}</p>
+          <p className="w-full bg-primary bg-opacity-50 rounded-md p-4">{study.insight}</p>
         </div>
       </div>
     </div>
