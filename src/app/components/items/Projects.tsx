@@ -11,7 +11,15 @@ interface Project {
 
 const projects = [
   {
-    name: 'Wadadak',
+    name: '🏃🏻 Wadadak',
+    description: '러닝 크루 플랫폼 서비스',
+    teamSize: '프론트엔드 2명, 백엔드 4명', // 참여 인원수
+    duration: '2024.09', // 프로젝트 기간
+    techStack: ['React', 'Next.js', 'TypeScript', 'Tailwind CSS', 'DaisyUI', 'Axios', 'Tanstack Query', 'Recoil'], // 사용한 기술 스택
+    features: ['회원 가입 및 로그인', '게시글 작성 및 수정', '실시간 채팅 기능'], // 구현 기능
+  },
+  {
+    name: '🍀 HonNol',
     description: '러닝 크루 플랫폼 서비스',
     teamSize: '프론트엔드 2명, 백엔드 4명', // 참여 인원수
     duration: '2024.09', // 프로젝트 기간

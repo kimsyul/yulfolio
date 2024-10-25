@@ -22,76 +22,74 @@ const About = () => {
       <Wrapper>
         <h1 className="text-4xl font-bold pb-2">김서율</h1>
         <h2 className="text-xl font-bold pb-4">Web Frontend Developer</h2>
-        <div className="pt-4">
-          <div className="bg-base-200 rounded-2xl flex flex-col justify-center items-center py-10 px-20">
-            <div className="flex flex-col lg:flex-row gap-10 pb-10">
-              <img
-                className="mask mask-circle"
-                src="https://img.daisyui.com/images/stock/photo-1567653418876-5bb0e566e1c2.webp"
-              />
-              <div className="flex flex-col gap-4">
-                <a className="btn btn-primary btn-wide text-white font-bold" href="mailto:yul_the@naver.com">
-                  yul_the@naver.com
-                </a>
+        <div className="bg-base-200 rounded-2xl flex flex-col justify-center items-center py-10 px-20">
+          <div className="flex flex-col lg:flex-row gap-10 pb-10">
+            <img
+              className="mask mask-circle"
+              src="https://img.daisyui.com/images/stock/photo-1567653418876-5bb0e566e1c2.webp"
+            />
+            <div className="flex flex-col gap-4">
+              <a className="btn btn-primary btn-wide text-white font-bold" href="mailto:yul_the@naver.com">
+                yul_the@naver.com
+              </a>
 
-                <a
-                  className="btn btn-primary btn-wide text-white font-bold text-center"
-                  href="https://github.com/kimsyul?tab=repositories">
-                  GitHub
-                </a>
-                <a
-                  className="btn btn-primary btn-wide text-white font-bold text-center"
-                  href="https://velog.io/@kimsyul/posts">
-                  Blog
-                </a>
-              </div>
+              <a
+                className="btn btn-primary btn-wide text-white font-bold text-center"
+                href="https://github.com/kimsyul?tab=repositories">
+                GitHub
+              </a>
+              <a
+                className="btn btn-primary btn-wide text-white font-bold text-center"
+                href="https://velog.io/@kimsyul/posts">
+                Blog
+              </a>
             </div>
-            <div className="divider divider-primary pb-6" />
-            <h1 className="bg-primary text-white font-extrabold text-2xl px-3 py-1 mb-4">Skills</h1>
-            <div className="outline-dashed outline-primary rounded-xl p-10 mx-10 mb-12">
-              <Skill title="Basic">
-                {basic.map((skill) => (
-                  <div key={skill} className="badge badge-neutral text-white font-bold">
-                    {skill}
-                  </div>
-                ))}
-              </Skill>
-              <Skill title="Library / Framework">
-                {library.map((skill) => (
-                  <div key={skill} className="badge badge-primary text-white font-bold">
-                    {skill}
-                  </div>
-                ))}
-              </Skill>
-              <Skill title="Styling">
-                {styling.map((skill) => (
-                  <div key={skill} className="badge badge-secondary text-white font-bold">
-                    {skill}
-                  </div>
-                ))}
-              </Skill>
-              <Skill title="Tool">
-                {tool.map((skill) => (
-                  <div key={skill} className="badge badge-accent text-white font-bold">
-                    {skill}
-                  </div>
-                ))}
-              </Skill>
-              <Skill title="Cloud">
-                {cloud.map((skill) => (
-                  <div key={skill} className="badge bg-slate-400 text-white font-bold">
-                    {skill}
-                  </div>
-                ))}
-              </Skill>
-            </div>
+          </div>
+          <div className="divider divider-primary pb-6" />
+          <h1 className="bg-primary text-white font-extrabold text-2xl px-3 py-1 mb-4">Skills</h1>
+          <div className="outline-dashed outline-primary rounded-xl p-10 mx-10 mb-12">
+            <Skill title="Basic">
+              {basic.map((skill) => (
+                <div key={skill} className="badge badge-neutral text-white font-bold">
+                  {skill}
+                </div>
+              ))}
+            </Skill>
+            <Skill title="Library / Framework">
+              {library.map((skill) => (
+                <div key={skill} className="badge badge-primary text-white font-bold">
+                  {skill}
+                </div>
+              ))}
+            </Skill>
+            <Skill title="Styling">
+              {styling.map((skill) => (
+                <div key={skill} className="badge badge-secondary text-white font-bold">
+                  {skill}
+                </div>
+              ))}
+            </Skill>
+            <Skill title="Tool">
+              {tool.map((skill) => (
+                <div key={skill} className="badge badge-accent text-white font-bold">
+                  {skill}
+                </div>
+              ))}
+            </Skill>
+            <Skill title="Cloud">
+              {cloud.map((skill) => (
+                <div key={skill} className="badge bg-slate-400 text-white font-bold">
+                  {skill}
+                </div>
+              ))}
+            </Skill>
+          </div>
 
-            <h1 className="bg-primary text-white font-extrabold text-2xl px-3 py-1 mb-4">Introduction</h1>
-            <div className="outline-dashed outline-primary rounded-xl p-10 mx-10 w-full">
-              사용자가 편안함을 느낄 수 있는, 반응성 높은 인터페이스를 지향합니다. 디테일과 깨끗한 코드를 중요시하며,
-              이를 위해 지속적으로 학습하고 있습니다. 또한 사용자 경험을 개선하기 위해 노력하고 있습니다. 제
-              포트폴리오를 봐주셔서 감사합니다!
-            </div>
+          <h1 className="bg-primary text-white font-extrabold text-2xl px-3 py-1 mb-4">Introduction</h1>
+          <div className="outline-dashed outline-primary rounded-xl p-10 mx-10 w-full">
+            사용자가 편안함을 느낄 수 있는, 반응성 높은 인터페이스를 지향합니다. 디테일과 깨끗한 코드를 중요시하며, 이를
+            위해 지속적으로 학습하고 있습니다. 또한 사용자 경험을 개선하기 위해 노력하고 있습니다. 제 포트폴리오를
+            봐주셔서 감사합니다!
           </div>
         </div>
       </Wrapper>
