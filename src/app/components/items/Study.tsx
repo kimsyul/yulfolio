@@ -11,13 +11,19 @@ const studies = [
   {
     name: '제로베이스 프론트엔드 스쿨 23기 수료',
     duration: '2024.01.01 ~ 2024.09.05', // 프로젝트 기간
-    description: '러닝 크루 플랫폼 서비스',
+    description: [],
     insight: '읖ㅎㄴㅇㄹㅇㄴㄹㄴㅇㄹ',
   },
   {
-    name: '제로베이스 프론트엔드 스쿨 23기 수료',
-    duration: '2024.01.01 ~ 2024.09.05', // 프로젝트 기간
-    description: '러닝 크루 플랫폼 서비스',
+    name: '한 입 크기로 잘라먹는 Next.js(15+) 강의 수강',
+    duration: '2024.09.25 ~ 2024.10.05', // 프로젝트 기간
+    description: [],
+    insight: '읖ㅎㄴㅇㄹㅇㄴㄹㄴㅇㄹ',
+  },
+  {
+    name: 'JSCODE 컴퓨터네트워크 스터디 8기',
+    duration: '2024.10.28~2024.11.29', // 프로젝트 기간
+    description: [],
     insight: '읖ㅎㄴㅇㄹㅇㄴㄹㄴㅇㄹ',
   },
 ];
@@ -34,6 +40,14 @@ const StudyCard = (study: Study) => {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 p-4">
           <div className="font-bold">학습 내용</div>
+          <ul>
+            {study.description.map((feat) => (
+              <li className="flex items-center gap-2">
+                <FontAwesomeIcon icon={faCode} />
+                <span key={feat}>{feat}</span>
+              </li>
+            ))}
+          </ul>
           <div>{study.description}</div>
         </div>
         <div className="flex flex-col items-center gap-4">

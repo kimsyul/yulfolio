@@ -1,4 +1,6 @@
 import Wrapper from '../layout/Wrapper';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCode, faSeedling } from '@fortawesome/free-solid-svg-icons';
 
 interface Project {
   name: string;
@@ -52,20 +54,21 @@ const Project = ({ project }: { project: Project }) => {
           <div className="font-bold">사용한 기술 스택</div>
           <div>
             {project.techStack.map((tech) => (
-              <TechStack tech={tech} />
+              <TechStack key={tech} tech={tech} />
             ))}
           </div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 p-4">
           <div className="font-bold">구현 기능</div>
-          <div>
-            <ul>
-              {project.features.map((feat) => (
-                <li key={feat}>{feat}</li>
-              ))}
-            </ul>
-          </div>
+          <ul>
+            {project.features.map((feat) => (
+              <li className="flex items-center gap-2">
+                <FontAwesomeIcon icon={faCode} />
+                <span key={feat}>{feat}</span>
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
     </section>
@@ -76,7 +79,10 @@ const Projects = () => {
   return (
     <section>
       <Wrapper>
-        <h1 className="text-4xl font-bold text-center">Projects</h1>
+        <h1 className="text-4xl font-bold text-center">
+          <FontAwesomeIcon icon={faSeedling} />
+          Projects
+        </h1>
         {projects.map((project) => (
           <Project key={project.name} project={project} />
         ))}
