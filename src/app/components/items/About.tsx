@@ -1,5 +1,6 @@
 import { ReactNode } from 'react';
 import Wrapper from '../layout/Wrapper';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const basic = ['HTML 5', 'CSS 3', 'JavaScript', 'TypeScript'];
 const library = ['React', 'Next.js', 'Axios', 'TanStack Query'];
@@ -22,7 +23,7 @@ const About = () => {
       <Wrapper>
         <h1 className="text-4xl font-bold pb-2">김서율</h1>
         <h2 className="text-xl font-bold pb-4">Web Frontend Developer</h2>
-        <div className="bg-base-200 rounded-2xl flex flex-col justify-center items-center py-10 px-20">
+        <div className="bg-base-100 rounded-2xl flex flex-col justify-center items-center py-10 px-20">
           <div className="flex flex-col lg:flex-row gap-10 pb-10">
             <img
               className="mask mask-circle"
