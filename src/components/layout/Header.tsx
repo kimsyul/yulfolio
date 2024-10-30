@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 const Header = () => {
   return (
     <header className="navbar lg:px-40 fixed top-0 left-0 z-50 bg-primary text-primary-content">
@@ -30,7 +32,9 @@ const Header = () => {
         </div>
       </div>
       <div className="flex-1">
-        <a className="btn btn-ghost text-xl ">Yulfolio</a>
+        <Link className="btn btn-ghost text-xl" href={'/'}>
+          Yulfolio
+        </Link>
       </div>
       <div className="hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
