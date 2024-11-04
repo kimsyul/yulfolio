@@ -1,0 +1,48 @@
+[
+  {
+    "id": "wadadak",
+    "name": "🏃🏻 Wadadak",
+    "description": "러닝 크루 플랫폼 서비스",
+    "teamSize": "프론트엔드 2명, 백엔드 4명",
+    "duration": "2024.09",
+    "mainTechStack": ["Next.js", "React", "TypeScript"],
+    "techStack": ["Next.js", "React", "TypeScript", "Tailwind CSS", "DaisyUI", "Axios", "Tanstack Query", "Recoil"],
+    "features": [
+      "공통 컴포넌트",
+      "axios 인스턴스, 토큰 갱신",
+      "크루 생성 / 크루 활동 관리",
+      "크루 가입 / 크루원 관리",
+      "크루 탐색"
+    ]
+  },
+  {
+    "id": "honnol",
+    "name": "🍀 HonNol",
+    "description": "혼자 노는 사람들의 커뮤니티",
+    "teamSize": "개인 프로젝트",
+    "duration": "2024.07",
+    "mainTechStack": ["React", "TypeScript"],
+    "techStack": ["React", "TypeScript", "Styled-Component", "FireBase"],
+    "features": ["회원 가입 및 로그인, 소셜 로그인", "게시글 작성 및 수정", "댓글 작성 및 수정"]
+  },
+  {
+    "id": "yulfolio",
+    "name": "💜 YulFolio",
+    "description": "프론트엔드 개발자 김서율 포트폴리오",
+    "teamSize": "개인 프로젝트",
+    "duration": "2024.10",
+    "mainTechStack": ["Next.js", "React", "TypeScript"],
+    "techStack": ["React, Next.js, TypeScript", "Tailwind CSS, DaisyUI"],
+    "features": ["회원 가입 및 로그인", "게시글 작성 및 수정", "실시간 채팅 기능"]
+  },
+  {
+    "id": "coupang",
+    "name": "🚀 Coupang Markup",
+    "description": "쿠팡 마크업",
+    "teamSize": "개인 프로젝트",
+    "duration": "2024.2",
+    "mainTechStack": ["HTML", "CSS"],
+    "techStack": ["HTML, CSS"],
+    "features": ["회원 가입 및 로그인", "게시글 작성 및 수정", "실시간 채팅 기능"]
+  }
+]

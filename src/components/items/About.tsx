@@ -1,6 +1,5 @@
 import { ReactNode } from 'react';
 import Wrapper from '../layout/Wrapper';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const basic = ['HTML 5', 'CSS 3', 'JavaScript', 'TypeScript'];
 const library = ['React', 'Next.js', 'Axios', 'TanStack Query'];
