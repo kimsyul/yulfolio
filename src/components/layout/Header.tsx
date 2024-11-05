@@ -20,13 +20,20 @@ const Header = () => {
               <a>About</a>
             </li>
             <li>
-              <a>Projects</a>
+              <a>Project</a>
             </li>
             <li>
-              <a href="https://github.com/kimsyul?tab=repositories">GitHub</a>
+              <a>Study</a>
             </li>
             <li>
-              <a href="https://velog.io/@kimsyul/posts">Blog</a>
+              <a href="https://github.com/kimsyul?tab=repositories" target="_blank" rel="noopener noreferrer">
+                GitHub
+              </a>
+            </li>
+            <li>
+              <a href="https://velog.io/@kimsyul/posts" target="_blank" rel="noopener noreferrer">
+                Blog
+              </a>
             </li>
           </ul>
         </div>
@@ -45,10 +52,14 @@ const Header = () => {
             <a>Projects</a>
           </li>
           <li>
-            <a href="https://github.com/kimsyul?tab=repositories">GitHub</a>
+            <a href="https://github.com/kimsyul?tab=repositories" target="_blank" rel="noopener noreferrer">
+              GitHub
+            </a>
           </li>
           <li>
-            <a href="https://velog.io/@kimsyul/posts">Blog</a>
+            <a href="https://velog.io/@kimsyul/posts" target="_blank" rel="noopener noreferrer">
+              Blog
+            </a>
           </li>
         </ul>
       </div>

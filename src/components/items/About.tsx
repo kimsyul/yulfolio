@@ -29,18 +29,26 @@ const About = () => {
               src="https://img.daisyui.com/images/stock/photo-1567653418876-5bb0e566e1c2.webp"
             />
             <div className="flex flex-col gap-4">
-              <a className="btn btn-primary btn-wide text-white font-bold" href="mailto:yul_the@naver.com">
+              <a
+                className="btn btn-primary btn-wide text-white font-bold"
+                href="mailto:yul_the@naver.com"
+                target="_blank"
+                rel="noopener noreferrer">
                 yul_the@naver.com
               </a>
 
               <a
                 className="btn btn-primary btn-wide text-white font-bold text-center"
-                href="https://github.com/kimsyul?tab=repositories">
+                href="https://github.com/kimsyul?tab=repositories"
+                target="_blank"
+                rel="noopener noreferrer">
                 GitHub
               </a>
               <a
                 className="btn btn-primary btn-wide text-white font-bold text-center"
-                href="https://velog.io/@kimsyul/posts">
+                href="https://velog.io/@kimsyul/posts"
+                target="_blank"
+                rel="noopener noreferrer">
                 Blog
               </a>
             </div>
