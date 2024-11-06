@@ -1,7 +1,7 @@
 import Wrapper from '../layout/Wrapper';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheck, faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
-import studyData from '../../app/data/study.json';
+import studyData from '../../data/study.json';
 import Link from 'next/link';
 
 interface Study {

@@ -1,33 +1,15 @@
 import Wrapper from '../layout/Wrapper';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCode, faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
+import { faCode } from '@fortawesome/free-solid-svg-icons';
 import Link from 'next/link';
-import projectData from '../../app/data/project.json';
-
-interface Project {
-  id: string;
-  name: string;
-  description: string;
-  teamSize: string;
-  duration: string;
-  mainTechStack: string[];
-  techStack: string[];
-  features: string[];
-}
+import projectData from '../../data/project.json';
+import { Project } from '@/types';
 
 const projects: Project[] = projectData;
 
-const TechStack = ({ tech }: { tech: string }) => {
-  return (
-    <>
-      <span className="mr-2 px-1">{tech}</span>
-    </>
-  );
-};
-
 const Project = ({ project }: { project: Project }) => {
   return (
-    <Link className="card border-dashed border-2 border-primary" href="#">
+    <Link className="card border-dashed border-2 border-primary" href={`/project/${project.id}`}>
       <div className="card-body gap-1">
         <div className="flex sm:justify-between items-center flex-col sm:flex-row gap-1">
           <h2 className="card-title text-2xl ">{project.name}</h2>
@@ -40,7 +22,7 @@ const Project = ({ project }: { project: Project }) => {
           </div>
         </div>
         <div className="underline text-center sm:text-left">{project.description}</div>
-        <section className="mt-6 sm:mt-2 hidden sm:block">
+        <section className="my-6 sm:my-2 hidden sm:block">
           <div className="flex items-center gap-2">
             <FontAwesomeIcon icon={faCode} />
             {project.duration}
@@ -49,26 +31,15 @@ const Project = ({ project }: { project: Project }) => {
             <FontAwesomeIcon icon={faCode} />
             {project.teamSize}
           </div>
-          <div className="flex items-center gap-2">
-            <FontAwesomeIcon icon={faCode} />
-            <a
-              href="#"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline hover:text-primary hover:font-bold">
-              Code
-            </a>
-          </div>
-          {/* <div className="flex items-center gap-2">
-                <FontAwesomeIcon icon={faCode} />
-                <a href="#" className="underline hover:text-neutral">
-                  Site
-                </a>
-              </div> */}
         </section>
-        {/* <section className="flex gap-10">
-        
-        </section> */}
+        <section className="hidden sm:block">
+          <button className="border-2 border-primary p-1 rounded-lg font-bold text-primary text-sm w-16 hover:bg-primary hover:text-white mr-1">
+            Code
+          </button>
+          <button className="border-2 border-primary p-1 rounded-lg font-bold text-primary text-sm w-16 hover:bg-primary hover:text-white">
+            Site
+          </button>
+        </section>
       </div>
     </Link>
   );
