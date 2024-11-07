@@ -5,7 +5,7 @@ import Study from '../components/items/Study';
 export default function Home() {
   return (
     <div>
-      <About />
+      <About ref={aboutRef} />
       <Projects />
       <Study />
     </div>

@@ -1,6 +1,12 @@
 import Link from 'next/link';
 
-const Header = () => {
+interface ScrollProps {
+  onAboutClick: () => void;
+  onProjectClick: () => void;
+  onStudyClick: () => void;
+}
+
+const Header = ({ onAboutClick, onProjectClick, onStudyClick }: ScrollProps) => {
   return (
     <header className="navbar lg:px-40 fixed top-0 left-0 z-50 bg-primary text-primary-content">
       <div className="flex-none">
@@ -17,13 +23,13 @@ const Header = () => {
           </div>
           <ul tabIndex={0} className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
             <li>
-              <a>About</a>
+              <span onClick={onAboutClick}>About</span>
             </li>
             <li>
-              <a>Project</a>
+              <span onClick={onProjectClick}>Project</span>
             </li>
             <li>
-              <a>Study</a>
+              <span onClick={onStudyClick}>Study</span>
             </li>
             <li>
               <a href="https://github.com/kimsyul?tab=repositories" target="_blank" rel="noopener noreferrer">
@@ -39,17 +45,20 @@ const Header = () => {
         </div>
       </div>
       <div className="flex-1">
-        <Link className="btn btn-ghost text-xl" href={'/'}>
+        <Link className="btn btn-ghost text-2xl text-white font-black" href={'/'}>
           Yulfolio
         </Link>
       </div>
       <div className="hidden lg:flex">
-        <ul className="menu menu-horizontal px-1">
+        <ul className="menu menu-horizontal px-1 underline font-medium">
           <li>
-            <a>About</a>
+            <span onClick={onAboutClick}>About</span>
           </li>
           <li>
-            <a>Projects</a>
+            <span onClick={onProjectClick}>Project</span>
+          </li>
+          <li>
+            <span onClick={onStudyClick}>Study</span>
           </li>
           <li>
             <a href="https://github.com/kimsyul?tab=repositories" target="_blank" rel="noopener noreferrer">

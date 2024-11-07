@@ -5,7 +5,7 @@
     "description": "러닝 크루 플랫폼 서비스",
     "teamSize": "프론트엔드 2명, 백엔드 4명",
     "duration": "2024.09",
-    "mainTechStack": ["Next.js", "React", "TypeScript"],
+    "mainTechStack": ["Next.js", "TypeScript"],
     "techStack": ["Next.js", "React", "TypeScript", "Tailwind CSS", "DaisyUI", "Axios", "Tanstack Query", "Recoil"],
     "features": [
       "공통 컴포넌트",
@@ -31,7 +31,7 @@
     "description": "프론트엔드 개발자 김서율 포트폴리오",
     "teamSize": "개인 프로젝트",
     "duration": "2024.10",
-    "mainTechStack": ["Next.js", "React", "TypeScript"],
+    "mainTechStack": ["Next.js", "TypeScript"],
     "techStack": ["React, Next.js, TypeScript", "Tailwind CSS, DaisyUI"],
     "features": ["회원 가입 및 로그인", "게시글 작성 및 수정", "실시간 채팅 기능"]
   },
