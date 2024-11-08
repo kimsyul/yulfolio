@@ -3,19 +3,18 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCode } from '@fortawesome/free-solid-svg-icons';
 import Link from 'next/link';
 import projectData from '../../data/project.json';
-import { Project } from '@/types';
-import { forwardRef } from 'react';
+import { ProjectType } from '@/types';
 
-const projects: Project[] = projectData;
+const projects: ProjectType[] = projectData;
 
-const Project = ({ project }: { project: Project }) => {
+const Project = ({ project }: { project: ProjectType }) => {
   return (
     <Link
       className="card border-dashed border-2 border-primary hover:shadow-xl transition-shadow duration-300"
       href={`/project/${project.id}`}>
-      <figure>
-        <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp" alt="Shoes" />
-      </figure>
+      {/* <figure className="w-full relative">
+        <Image src="/wadadak.png" alt="Shoes" fill={true} object-fit="cover" />
+      </figure> */}
       <div className="card-body">
         <div>
           {project.mainTechStack.map((item, idx) => (
@@ -49,9 +48,9 @@ const Project = ({ project }: { project: Project }) => {
   );
 };
 
-const Projects = forwardRef<HTMLDivElement>((_, ref) => {
+const Projects = () => {
   return (
-    <section id="project" ref={ref}>
+    <section id="project">
       <Wrapper>
         <div className="flex">
           <h1 className="text-5xl font-bold pl-4">Project.</h1>
@@ -65,6 +64,6 @@ const Projects = forwardRef<HTMLDivElement>((_, ref) => {
       </Wrapper>
     </section>
   );
-});
+};
 
 export default Projects;

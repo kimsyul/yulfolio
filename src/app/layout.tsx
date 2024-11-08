@@ -5,7 +5,6 @@ import '@fortawesome/fontawesome-svg-core/styles.css';
 import { Inter, Noto_Sans_KR } from 'next/font/google';
 import Header from '../components/layout/Header';
 import Footer from '../components/layout/Footer';
-import { RefObject, useRef } from 'react';
 
 config.autoAddCss = false;
 
@@ -30,22 +29,14 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const aboutRef = useRef<HTMLDivElement>(null);
-  const projectRef = useRef<HTMLDivElement>(null);
-  const studyRef = useRef<HTMLDivElement>(null);
-
-  const scrollToSection = (ref: RefObject<HTMLDivElement>) => {
-    ref.current?.scrollIntoView({ behavior: 'smooth' });
-  };
+  // const aboutRef = useRef<HTMLDivElement>(null);
+  // const projectRef = useRef<HTMLDivElement>(null);
+  // const studyRef = useRef<HTMLDivElement>(null);
 
   return (
     <html lang="ko" data-theme="autumn">
       <body className={`${inter.className} ${notoSansKR.className} antialiased`}>
-        <Header
-          onAboutClick={() => scrollToSection(aboutRef)}
-          onProjectClick={() => scrollToSection(projectRef)}
-          onStudyClick={() => scrollToSection(studyRef)}
-        />
+        <Header />
         <main className="min-h-screen relative top-16">{children}</main>
         <Footer />
       </body>

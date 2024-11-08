@@ -1,9 +1,9 @@
 import projectData from '../../../data/project.json';
-import { Project } from '@/types';
+import { ProjectType } from '@/types';
 
 export default async function ProjectPage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;
-  const project: Project | null = projectData.find((data) => data.id === id) || null;
+  const project: ProjectType | null = projectData.find((data) => data.id === id) || null;
 
   return (
     <>

@@ -1,5 +1,6 @@
-import { ReactNode, forwardRef } from 'react';
+import { ReactNode } from 'react';
 import Wrapper from '../layout/Wrapper';
+import Image from 'next/image';
 
 const basic = ['HTML 5', 'CSS 3', 'JavaScript', 'TypeScript'];
 const library = ['React', 'Next.js', 'Axios', 'TanStack Query'];
@@ -16,18 +17,15 @@ const Skill = ({ title, children }: { title: string; children: ReactNode }) => {
   );
 };
 
-const About = forwardRef<HTMLDivElement>((_, ref) => {
+const About = () => {
   return (
-    <section className="bg-primary" id="about" ref={ref}>
+    <section className="bg-primary" id="about">
       <Wrapper>
         <h1 className="text-4xl font-bold pb-2">김서율</h1>
         <h2 className="text-xl font-bold pb-4">Web Frontend Developer</h2>
         <div className="bg-base-100 rounded-2xl flex flex-col justify-center items-center py-10 px-4 sm:px-20">
-          <div className="flex flex-col lg:flex-row gap-10 pb-10">
-            <img
-              className="mask mask-circle"
-              src="https://img.daisyui.com/images/stock/photo-1567653418876-5bb0e566e1c2.webp"
-            />
+          <div className="flex flex-col items-center lg:flex-row gap-10 pb-10">
+            <Image className="mask mask-circle" src="/pro.webp" alt="프로필 사진" width={200} height={200} />
             <div className="flex flex-col gap-4">
               <a
                 className="btn btn-primary btn-wide text-white font-bold"
@@ -103,6 +101,6 @@ const About = forwardRef<HTMLDivElement>((_, ref) => {
       </Wrapper>
     </section>
   );
-});
+};
 
 export default About;
