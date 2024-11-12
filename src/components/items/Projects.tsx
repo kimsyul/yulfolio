@@ -4,6 +4,7 @@ import { faCode } from '@fortawesome/free-solid-svg-icons';
 import Link from 'next/link';
 import projectData from '../../data/project.json';
 import { ProjectType } from '@/types';
+import Layout from './Layout';
 
 const projects: ProjectType[] = projectData;
 
@@ -51,17 +52,14 @@ const Project = ({ project }: { project: ProjectType }) => {
 const Projects = () => {
   return (
     <section id="project">
-      <Wrapper>
-        <div className="flex">
-          <h1 className="text-5xl font-bold pl-4">Project.</h1>
-        </div>
-        <div className="grid md:grid-cols-2 gap-8 mt-8">
+      <Layout title="Project.">
+        <div className="grid md:grid-cols-2 gap-8 ">
           {projects.map((project) => (
             // <Project key={project.name} project={project} />
             <Project key={project.id} project={project} />
           ))}
         </div>
-      </Wrapper>
+      </Layout>
     </section>
   );
 };

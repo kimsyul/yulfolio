@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheck } from '@fortawesome/free-solid-svg-icons';
 import studyData from '../../data/study.json';
 import Link from 'next/link';
+import Layout from './Layout';
 
 interface Study {
   name: string;
@@ -43,14 +44,13 @@ const StudyCard = (study: Study) => {
 const Study = () => {
   return (
     <section className="bg-primary" id="study">
-      <Wrapper>
-        <h1 className="text-5xl font-bold pl-4">Study.</h1>
-        <div className="grid md:grid-cols-2 gap-8 my-8">
+      <Layout title="Study.">
+        <div className="grid md:grid-cols-2 gap-8">
           {studies.map((study) => (
             <StudyCard key={study.name} {...study} />
           ))}
         </div>
-      </Wrapper>
+      </Layout>
     </section>
   );
 };
