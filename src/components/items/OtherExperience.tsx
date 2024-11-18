@@ -7,7 +7,7 @@ const experiences: ExperienceType[] = experienceData;
 
 const Card = ({ experience }: { experience: ExperienceType }) => {
   return (
-    <div className="bg-base-200 collapse collapse-arrow">
+    <div className="bg-base-200 collapse collapse-arrow" id="etc">
       <input type="checkbox" className="peer" />
       <div className="collapse-title bg-primary text-primary-content peer-checked:bg-secondary peer-checked:text-secondary-content">
         <h3 className="text-xl font-bold text-white pb-1">{experience.name}</h3>
