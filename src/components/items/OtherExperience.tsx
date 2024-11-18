@@ -1,7 +1,7 @@
 import Layout from './Layout';
 import experienceData from '../../data/other-experience.json';
 import { ExperienceType } from '@/types';
-import Image from 'next/image';
+// import Image from 'next/image';
 
 const experiences: ExperienceType[] = experienceData;
 
@@ -17,11 +17,11 @@ const Card = ({ experience }: { experience: ExperienceType }) => {
         <p className="bg-base-100 text-gray-400 font-bold leading-loose mx-4 rounded-lg p-3 mb-4">
           {experience.description}
         </p>
-        <div className="border-2 border-dashed border-white mx-4 rounded-lg p-6 flex flex-col items-center">
+        {/* <div className="border-2 border-dashed border-white mx-4 rounded-lg p-6 flex flex-col items-center">
           {experience.images?.map((img, idx) => (
             <Image key={idx} src={img.src} alt={img.alt} width={1000} height={500} />
           ))}
-        </div>
+        </div> */}
       </div>
     </div>
 

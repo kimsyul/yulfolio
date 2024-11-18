@@ -7,6 +7,8 @@ export interface ProjectType {
   mainTechStack: string[];
   techStack: string[];
   features: string[];
+  code: string;
+  more?: string;
 }
 
 export interface ExperienceType {
