@@ -52,15 +52,18 @@ const Header = () => {
       <div className="hidden lg:flex">
         <ul className="menu menu-horizontal px-1 underline font-medium">
           <li>
-            <span>About</span>
+            <a href="#about">About</a>
           </li>
           <li>
-            <span>Project</span>
+            <a href="#project">Project</a>
           </li>
           <li>
-            <span>Study</span>
+            <a href="#study">Study</a>
           </li>
           <li>
+            <a href="#etc">Etc</a>
+          </li>
+          {/* <li>
             <a href="https://github.com/kimsyul?tab=repositories" target="_blank" rel="noopener noreferrer">
               GitHub
             </a>
@@ -69,7 +72,7 @@ const Header = () => {
             <a href="https://velog.io/@kimsyul/posts" target="_blank" rel="noopener noreferrer">
               Blog
             </a>
-          </li>
+          </li> */}
         </ul>
       </div>
     </header>
