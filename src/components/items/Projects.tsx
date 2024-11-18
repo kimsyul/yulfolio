@@ -1,7 +1,5 @@
-import Wrapper from '../layout/Wrapper';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCode } from '@fortawesome/free-solid-svg-icons';
-import Link from 'next/link';
 import projectData from '../../data/project.json';
 import { ProjectType } from '@/types';
 import Layout from './Layout';
