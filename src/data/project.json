@@ -18,7 +18,7 @@
     "duration": "2024.07",
     "mainTechStack": ["React", "TypeScript"],
     "techStack": ["React", "TypeScript", "Styled-Component", "FireBase"],
-    "features": ["회원 가입 및 로그인, 소셜 로그인", "게시글 작성 및 수정", "댓글 작성 및 수정", "미완성"],
+    "features": ["회원 가입 및 로그인, 소셜 로그인", "게시글 작성 및 수정", "댓글 작성 및 수정", "디벨롭 예정"],
     "code": "https://github.com/kimsyul/hon-nol-project"
   },
   {
