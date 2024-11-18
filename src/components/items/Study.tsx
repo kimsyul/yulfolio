@@ -1,8 +1,7 @@
-import Wrapper from '../layout/Wrapper';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheck } from '@fortawesome/free-solid-svg-icons';
 import studyData from '../../data/study.json';
-import Link from 'next/link';
+import Layout from './Layout';
 
 interface Study {
   name: string;
@@ -16,8 +15,8 @@ const studies: Study[] = studyData;
 const StudyCard = (study: Study) => {
   return (
     // <div className="bg-base-100 rounded-2xl flex flex-col justify-center items-center pt-10 pb-8 px-20 my-8">
-    <Link
-      href={`/study/${study.name}`}
+    <section
+      // href={`/study/${study.name}`}
       className="card bg-base-100 shadow-lg hover:shadow-2xl transition-shadow duration-300">
       <div className="card-body">
         <h1 className="bg-primary text-white font-extrabold text-xl px-3 p-1 text-center mb-2">{study.name}</h1>
@@ -36,21 +35,20 @@ const StudyCard = (study: Study) => {
           <p className="w-full bg-primary bg-opacity-50 rounded-md p-4">{study.insight}</p>
         </div> */}
       </div>
-    </Link>
+    </section>
   );
 };
 
 const Study = () => {
   return (
     <section className="bg-primary" id="study">
-      <Wrapper>
-        <h1 className="text-5xl font-bold pl-4">Study.</h1>
-        <div className="grid md:grid-cols-2 gap-8 my-8">
+      <Layout title="Study.">
+        <div className="grid md:grid-cols-2 gap-8">
           {studies.map((study) => (
             <StudyCard key={study.name} {...study} />
           ))}
         </div>
-      </Wrapper>
+      </Layout>
     </section>
   );
 };

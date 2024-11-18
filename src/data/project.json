@@ -1,19 +1,14 @@
 [
   {
-    "id": "wadadak",
-    "name": "🏃🏻 Wadadak",
-    "description": "러닝 크루 플랫폼 서비스",
-    "teamSize": "프론트엔드 2명, 백엔드 4명",
-    "duration": "2024.09",
-    "mainTechStack": ["Next.js", "TypeScript"],
-    "techStack": ["Next.js", "React", "TypeScript", "Tailwind CSS", "DaisyUI", "Axios", "Tanstack Query", "Recoil"],
-    "features": [
-      "공통 컴포넌트",
-      "axios 인스턴스, 토큰 갱신",
-      "크루 생성 / 크루 활동 관리",
-      "크루 가입 / 크루원 관리",
-      "크루 탐색"
-    ]
+    "id": "coupang",
+    "name": "🚀 Coupang Markup",
+    "description": "쿠팡 마크업",
+    "teamSize": "개인 프로젝트",
+    "duration": "2024.2",
+    "mainTechStack": ["HTML", "CSS"],
+    "techStack": ["HTML, CSS"],
+    "features": ["오늘의 발견", "오늘의 쇼핑 제안", "카테고리별 추천 광고 상품", "헤더와 푸터"],
+    "code": "https://github.com/kimsyul/Coupang-Discovery_of_the_Day"
   },
   {
     "id": "honnol",
@@ -23,7 +18,20 @@
     "duration": "2024.07",
     "mainTechStack": ["React", "TypeScript"],
     "techStack": ["React", "TypeScript", "Styled-Component", "FireBase"],
-    "features": ["회원 가입 및 로그인, 소셜 로그인", "게시글 작성 및 수정", "댓글 작성 및 수정"]
+    "features": ["회원 가입 및 로그인, 소셜 로그인", "게시글 작성 및 수정", "댓글 작성 및 수정", "미완성"],
+    "code": "https://github.com/kimsyul/hon-nol-project"
+  },
+  {
+    "id": "wadadak",
+    "name": "🏃🏻 Wadadak",
+    "description": "러닝 크루 플랫폼 서비스",
+    "teamSize": "프론트엔드 2명, 백엔드 4명 (기여도 30%)",
+    "duration": "2024.09",
+    "mainTechStack": ["Next.js", "TypeScript"],
+    "techStack": ["Next.js", "React", "TypeScript", "Tailwind CSS", "DaisyUI", "Axios", "Tanstack Query", "Recoil"],
+    "features": ["기획 및 디자인", "공통 컴포넌트", "axios 인스턴스, 토큰 갱신", "크루 생성, 탐색, 가입, 활동 관리"],
+    "code": "https://github.com/Wadadak/wadadakFrontend",
+    "more": "https://syul.notion.site/Wadadak-141c27b72c9d80879321e3df49c4b164?pvs=4"
   },
   {
     "id": "yulfolio",
@@ -33,16 +41,7 @@
     "duration": "2024.10",
     "mainTechStack": ["Next.js", "TypeScript"],
     "techStack": ["React, Next.js, TypeScript", "Tailwind CSS, DaisyUI"],
-    "features": ["회원 가입 및 로그인", "게시글 작성 및 수정", "실시간 채팅 기능"]
-  },
-  {
-    "id": "coupang",
-    "name": "🚀 Coupang Markup",
-    "description": "쿠팡 마크업",
-    "teamSize": "개인 프로젝트",
-    "duration": "2024.2",
-    "mainTechStack": ["HTML", "CSS"],
-    "techStack": ["HTML, CSS"],
-    "features": ["회원 가입 및 로그인", "게시글 작성 및 수정", "실시간 채팅 기능"]
+    "features": ["반응형 UI", "이미지 최적화", "기능과 페이지 추가 작업 진행 중"],
+    "code": "https://github.com/kimsyul/yulfolio"
   }
 ]
