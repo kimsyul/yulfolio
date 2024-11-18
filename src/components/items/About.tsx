@@ -44,7 +44,7 @@ const About = () => {
               </a>
               <a
                 className="btn btn-primary btn-wide text-white font-bold text-center"
-                href="https://velog.io/@kimsyul/posts"
+                href="https://front-end-yul.tistory.com/"
                 target="_blank"
                 rel="noopener noreferrer">
                 Blog
